@@ -4,7 +4,6 @@ package com.backy;
 import com.backy.constant.ItemSellStatus;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.context.ApplicationContext;
 
 @SpringBootApplication
 public class ShopApplication {

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>상품 데이터 출력 예제</h1>
+    <table>
+        <thead>
+        <tr>
+            <td>순번</td>
+            <td>상품명</td>
+            <td>상품설명</td>
+            <td>가격</td>
+            <td>상품등록일</td>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="dto, status : ${itemDtoList}">
+            <td th:text="${status.index}"></td>
+            <td th:text="${dto.itemNm}"></td>
+            <td th:text="${dto.itemDetail}"></td>
+            <td th:text="${dto.price}"></td>
+            <td th:text="${dto.regTime}"></td>
+        </tr>
+        </tbody>
+    </table>
+</body>
+</html>

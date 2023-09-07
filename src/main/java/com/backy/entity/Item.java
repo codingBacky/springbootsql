@@ -34,8 +34,8 @@ public class Item {
     private int price;
     @Column(nullable = false)
     private int stockNumber;
-    @Lob
-    @Column(nullable = false)
+    //@Lob
+    @Column(nullable = false, length = 4000)
     private String itemDetail;
     @Enumerated(EnumType.STRING)
     private ItemSellStatus itemSellStatus;
