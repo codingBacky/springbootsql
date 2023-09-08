@@ -24,7 +24,7 @@ import java.time.LocalDateTime;
 )
 public class Item {
     @Id
-    @Column(name = "shopId")
+    @Column(name = "item_id")
     @GeneratedValue(strategy = GenerationType.SEQUENCE,
                     generator = "ITEM_SEQUENCE_JEN")
     private Long id;
